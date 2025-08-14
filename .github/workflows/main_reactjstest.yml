@@ -49,7 +49,7 @@ jobs:
           name: node-app
       
       - name: Login to Azure
-        uses: azure/login@v2
+        uses: azure/login@v1
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7677211354AC46958E58EAEA556042AA }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_EF19C86ED0404838B53456F6076310E2 }}
@@ -62,4 +62,5 @@ jobs:
           app-name: 'reactjstest'
           slot-name: 'Production'
           package: .
+
           
